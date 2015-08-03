@@ -1,0 +1,8 @@
+{
+	"name" : "user's name",
+	"date" : "YYYYMMDD_HHmmss-HHmmss",
+	"interval" : 250,
+	"points" : [
+		{ "acc" : [ 1, 2, 3],  "bat" : [ 12 ] }
+	]
+}
