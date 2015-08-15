@@ -4,7 +4,7 @@ import sys
 import json
 
 def check_file(fn):
-    print "# fn=" + fn
+    sys.stdout.write("# fn={0} ".format(fn))
 
     rv = 0
     try:
