@@ -3,25 +3,38 @@
 import sys
 import json
 
+def check_file(fn):
+    print "# fn=" + fn
+
+    rv = 0
+    try:
+        with open(fn, "r") as f:
+            js = json.load(f)
+        f.close()
+
+        js = json.dumps(js, sort_keys=True, indent=4, separators=(',', ': '))
+        # print js
+        print "OK"
+    except Exception as e:
+        print "Exception: " + repr(e)
+        rv = 1
+
+    return rv
+
 def usage():
-    print "validate.py <jsonfilename>\n"
+    print "validate.py <json1file> [<json2file> ...]"
     sys.exit(1)
 
 def main():
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         usage()
 
-    fn = sys.argv[1]
-    print "# fn=" + fn
+    rv = 0
+    for fn in sys.argv[1:]:
+        rv += check_file(fn)
 
-    with open(fn, "r") as f:
-        js = json.load(f)
-    f.close()
-
-    js = json.dumps(js, sort_keys=True, indent=4, separators=(',', ': '))
-
-    print js
+    return rv
 
 if __name__ == "__main__":
-    main();
+    sys.exit(main())
 
