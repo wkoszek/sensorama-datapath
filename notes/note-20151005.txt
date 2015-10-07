@@ -4,3 +4,4 @@ Notes:
 - finish server part
 - target Google Play before the end of the year
 - TODO: upload Excel graphs and maybe add some commentary on early results.
+- TODO: privacy policy for Sensorama data files.
