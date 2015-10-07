@@ -1,0 +1,6 @@
+Notes:
+- collect more data, since from ~25 files it impossible to tell
+- highest importance: add more sensors
+- finish server part
+- target Google Play before the end of the year
+- TODO: upload Excel graphs and maybe add some commentary on early results.
