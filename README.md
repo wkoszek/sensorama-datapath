@@ -11,3 +11,8 @@ validating JSON files from `files/`
 
 `schema` has the schema (skeleton file) which describes the layout of the
 sample JSON files.
+
+# Author
+
+- Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
+- [http://www.koszek.com](http://www.koszek.com)
