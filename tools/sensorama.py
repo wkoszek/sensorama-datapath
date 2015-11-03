@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Copyright (c) 2015, Wojciech A. Koszek
+# All rights reserved.
 
 import sys
 import json

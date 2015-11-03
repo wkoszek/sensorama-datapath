@@ -1,3 +1,6 @@
+# Copyright (c) 2015, Wojciech A. Koszek
+# All rights reserved.
+
 language: python
 python:
 - '2.7'
