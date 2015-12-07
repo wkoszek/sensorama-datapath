@@ -12,6 +12,22 @@ validating JSON files from `files/`
 `schema` has the schema (skeleton file) which describes the layout of the
 sample JSON files.
 
+# Data format
+
+Data is stored in a JSON format. The 1st hierarchy holds `date`, `device`
+and `desc`, which are self-explanatory. The `interval` specifies number of
+milliseconds between asking the sensor to give you data. The `sensors` will
+dump out all sensors known to the device. Then it comes to actual data, the
+fields areas folows:
+
+- `acc` - accelerator coordinates
+- `gyro` - gyroscompe values
+- `steps` - step counter
+- `grav` - gravity counter
+- `env` -
+- `batt` - monitor the state usage
+
+
 # Author
 
 - Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
