@@ -24,7 +24,11 @@ fields areas folows:
 - `gyro` - gyroscompe values
 - `steps` - step counter
 - `grav` - gravity counter
-- `env` -
+- `env` - contains 4 variables:
+   - ambient light 
+   - light sensor
+   - pressure sensor
+   - humidity sensor
 - `batt` - monitor the state usage
 
 
